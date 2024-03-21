@@ -4,93 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
-    <style>
-        /* Estilos para la tabla */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 2px solid #ddd;
-            background-color: #f9f9f9;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>My Personal Page</h1>
-    <section>
-        <h2>About Me</h2>
-        <p>Name: Alessandro Figueroa Pozo <br>
-           Major: Industrial Engineering <br>
-           Year of Enrollment: 2021 <br>
-           Github link: <a href="https://github.com/Alessandrofig">My Github profile</a><br>
-           Personal summary: Alessandro is a 21-year-old student studying industrial engineering with a minor in innovation. He is passionate about studying data and analysis for decision-making and task optimization. Outside of work, he greatly enjoys various sports, traveling, and hikes.</p>
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <th>Skill</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Expert</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Git</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Excel</td>
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Expert</td>
-            </tr>
-            <tr>
-                <td>Ruby</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>English</td>
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td>Spanish</td>
-                <td>Native</td>
-            </tr>
-        </table>
-    </section>
+    <div class="container">
+        <h1 class="mt-4 mb-4">My Personal Page</h1>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <section>
+                    <h2>About Me</h2>
+                    <p>Name: Alessandro Figueroa Pozo <br>
+                       Major: Industrial Engineering <br>
+                       Year of Enrollment: 2021 <br>
+                       Github link: <a href="https://github.com/Alessandrofig">My Github profile</a><br>
+                       Personal summary: Alessandro is a 21-year-old student studying industrial engineering with a minor in innovation. Alessandro is passionate about studying data and analysis for decision-making and task optimization. Outside of work, Alessandro greatly enjoys various sports, traveling, and hikes.</p>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section>
+                    <h2>Skills</h2>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Expert</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>HTML/CSS</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>Git</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>Excel</td>
+                                <td>Advance</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>Expert</td>
+                            </tr>
+                            <tr>
+                                <td>Ruby</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>Advance</td>
+                            </tr>
+                            <tr>
+                                <td>Spanish</td>
+                                <td>Native</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
 
-    <input type="text" id="input-text">
-    <button onclick="changeContent()">Change Content</button>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>FAQ</h2>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What´s your favorite hobby?
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Mi favorite hobby is hiking. I love to explore new routes and enjoying nature.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    In wich programation lagnuage are you interested the most?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                I am really interested in Python and JavaScript.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <input type="text" id="input-text" class="form-control mt-4">
+    <button onclick="changeContent()" class="btn btn-primary mt-2">Change Content</button>
 
     <script>
         function changeContent() {
@@ -100,5 +125,10 @@
             document.body.appendChild(dynamicSection);
         }
     </script>
+
+    <!-- Bootstrap JS (opcional, pero necesario para ciertos componentes de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
