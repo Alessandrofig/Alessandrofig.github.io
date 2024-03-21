@@ -119,11 +119,11 @@
 
     <script>
         function changeContent() {
-            var inputText = document.getElementById("input-text").value;
-            var dynamicSection = document.createElement("section");
-            dynamicSection.innerHTML = "<h2>New Content</h2><p>" + inputText + "</p>"; 
-            document.body.appendChild(dynamicSection);
-        }
+    var inputText = document.getElementById("input-text").value;
+    var dynamicSection = document.createElement("section");
+    dynamicSection.innerHTML = "<h2>" + inputText + "</h2><p>New content here...</p>";
+    document.body.appendChild(dynamicSection);
+}
     </script>
 
     <!-- Bootstrap JS (opcional, pero necesario para ciertos componentes de Bootstrap) -->
