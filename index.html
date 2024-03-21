@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <style>
+        /* Estilos para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #ddd;
+            background-color: #f9f9f9;
+        }
 
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Personal Page</h1>
+    <section>
+        <h2>About Me</h2>
+        <p>Name: Alessandro Figueroa Pozo <br>
+           Major: Industrial Engineering <br>
+           Year of Enrollment: 2021 <br>
+           Github link: <a href="https://github.com/Alessandrofig">My Github profile</a><br>
+           Personal summary: Alessandro is a 21-year-old student studying industrial engineering with a minor in innovation. He is passionate about studying data and analysis for decision-making and task optimization. Outside of work, he greatly enjoys various sports, traveling, and hikes.</p>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Excel</td>
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td>Spanish</td>
+                <td>Native</td>
+            </tr>
+        </table>
+    </section>
+
+    <input type="text" id="input-text">
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            var inputText = document.getElementById("input-text").value;
+            var dynamicSection = document.createElement("section");
+            dynamicSection.innerHTML = "<h2>New Content</h2><p>" + inputText + "</p>"; 
+            document.body.appendChild(dynamicSection);
+        }
+    </script>
+</body>
+</html>
