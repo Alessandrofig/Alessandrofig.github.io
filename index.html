@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Estilos adicionales para ajustar la apariencia en pantallas pequeñas */
         @media (max-width: 767.98px) {
             .custom-margin-md {
                 margin-top: 4rem !important;
@@ -123,7 +121,20 @@
             </div>
         </div>
         
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Projects</h2>
+                <div class="card">
+                    <img src= https://media.licdn.com/dms/image/D5612AQGxN33vY4O7FA/article-cover_image-shrink_720_1280/0/1690101139624?e=2147483647&v=beta&t=rxl1ZfMm4Ihg6HLEAlASEGwNh5Llgp--KtJ4lpwPGk0 class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                    <h5 class="card-title">Lab 2</h5>
+                    <p class="card-text">Lab 2 web technologies</p>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
     <input type="text" id="input-text" class="form-control mt-4">
     <button onclick="changeContent()" class="btn btn-primary mt-2">Change Content</button>
@@ -136,8 +147,30 @@
     document.body.appendChild(dynamicSection);
 }
     </script>
+    
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Personal Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Bootstrap JS (opcional, pero necesario para ciertos componentes de Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
